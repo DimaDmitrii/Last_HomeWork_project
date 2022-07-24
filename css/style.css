@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 13px;
+      /* background: no-repeat none; */
+      background: linear-gradient(180deg, var(--backgroung_color_2), var(--backgroung_color_3));
+      line-height: 1.154;
+      font-weight: 400;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  /*****          HEADER          *****/
+  
+  .header {
+      width: 100%;
+      background-color: var(--background_color_1);
+  }
+  
+  .header_stuff {
+      display: flex;
+      justify-content: space-between;
+      width: 959px;
+      height: 48px;
+      margin: 0 auto;
+  }
+  
+  .top_nav_news {
+      display: flex;
+      align-items: center;
+      width: 165px;
+  }
+  
+  .top_nav_searcher {
+      display: flex;
+      align-items: center;
+      width: 230px;
+      padding-right: 15px;
+  }
+  
+  .searcher {
+      display: flex;
+      border: #edeef0;
+      border-radius: 8px;
+      height: 32px;
+      width: 230px;
+      background-color: #edeef0;
+  }
+  
+  #Capa_1 {
+      align-self: center;
+      display: flex;
+      justify-self: center;
+      color: #6f7985;
+      width: 12px;
+      height: 12px;
+      padding: 0 11px;
+  }
+  
+  .header_search_friends {
+      /*background-img: ; */
+      width: 100%;
+      background-color: #edeef0;
+      border: 0;
+      border-radius: 8px;
+      outline: 0;
+  }
+  
+  .top_nav_last_calls {
+      display: flex;
+      justify-content: center;
+      width: 48px;
+      color: #6f7985;
+  }
+  
+  .bell_icon {
+      width: min-content;
+  }
+  
+  .top_nav_music_bar {
+      width: 386px;
+  }
+  
+  .music_bar {
+      display: flex;
+      width: 342px;
+      margin: 0 30px 0 8px;
+  }
+  
+  .menu {
+      display: flex;
+      justify-content: center;
+      width: 48px;
+      color: #6f7985;
+  }
+  
+  .akk_info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      padding-left: 10px;
+      /* position: relative; */
+  }
+  
+  .user_avatar {
+      border-radius: 50%;
+  }
+
+  .top_profile_container {
+    /* position: absolute; */
+    display: flex;
+    justify-content: end;
+    /* visibility: hidden; */
+    width: 959px;
+    height: 0px;
+    margin: 0px auto;
+  }
+
+  .top_profile {
+    position: relative;
+  }
+
+  .top_profile_button {
+    position: relative;
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+
+  .top_profile_menu {
+    position: absolute;
+    top: 49px;
+    right: 300px;
+    padding: 12px 0 8px 0;
+    background: white;
+    height: 281px;
+    width: 300px;
+    border: 0.8px;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+    border-radius: 0 0 8px 8px;
+    z-index: 4;
+    visibility: collapse;
+  }
+
+  .profile_element {
+    padding: 0 16px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+  }
+
+  .profile_element_theme {
+    padding: 0 16px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+  }
+
+  .left_bar_element:hover{
+    background-color: rgba(174, 183, 194, 0.12);
+  }
+
+  /* .top_profile_menu_content {
+    bottom: 0;
+  } */
+
+  .top_profile_button:checked ~ .top_profile_menu {
+    visibility: visible;
+    /* background-color: red; */
+  }
+  
+  .nav_element {
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+  
+  .nav_element:hover {
+      background-color: rgba(174, 183, 194, 0.12);
+  }
+  
+  /*****          MAIN          *****/
+  
+      /*****          LEFT_BAR          *****/
+  
+  .conteiner {
+      display: flex;
+      width: max-content;
+      margin: 0 auto;
+      padding-top: 15px;
+  }
+  
+  .left_nav_bar {
+      justify-content: center; /*---*/
+      width: 154px;
+      margin-right: 16px;
+  }
+  
+  .left_bar_element {
+      padding: 0px 6px;
+      border-radius: 4px;
+      width: 151px;
+      display: flex;
+      height: 30px;
+      align-items: center;
+  }
+  
+  .left_bar_element:hover{
+      background-color: rgba(174, 183, 194, 0.12);
+  }
+
+  .left_bar_icon {
+      color: #5383b9;
+      margin-right: 10px;
+  }
+  
+  .left_bar_name {
+      width: 121px;
+  }
+  
+      /*****          RIGHT_BAR          *****/
+  
+  .right_nav_bar {
+      color: #375885;
+  }
+  
+  .chats {
+      display: flex;
+      width: 795px;
+      justify-content: space-between;
+  }
+  
+  .chats_list {
+      width: 550px;
+      min-height: 100%;
+      border-radius: 4px 4px 0px 0px;
+      background-color: white;
+  }
+  
+  .chat_search_nav {
+      display: flex;
+      height: 48px;
+      border-bottom: 2px solid;
+      border-color: #edeef0;
+      border-radius: 4px 4px 0 0;
+      background-color: white;
+  }
+  
+  .chat_search {
+      height: 100%;
+      flex-grow: 1;
+      border-radius: 4px 4px 0px 0px;
+      border: 0;
+      outline: 0;
+      font-size: 13px;
+      background-color: white;
+  }
+  
+  .search_custom {
+      justify-content: start;
+  }
+  
+  .search_custom_button {
+      color: #99a2ad;
+      background: 0 0;
+      border: 0;
+      outline: 0;
+      width: 36px;
+      height: 100%;
+      opacity: .7;
+  }
+  
+  .search_custom_button:hover {
+      opacity: 1;
+  }
+  
+  #search_custom_more_button {
+      box-sizing: content-box;
+      border-right: 9px solid transparent;
+  }
+  
+  .right_nav_bar {
+      min-height: 50px;
+      width: 230px;
+      padding: 5px 0px;
+      border-radius: 4px;
+      background-color: white;
+  }
+  
+  .right_nav_element {
+      display: block;
+      line-height: 31px;
+      height: 32px;
+      padding: 0px 5px 0px 20px;
+      user-select: none;
+  }
+  
+  .right_nav_element:hover {
+      background-color: rgba(174, 183, 194, 0.12);
+  }
+
+  #check_tools {
+    display: none;
+  }
+  
+  .check_tools {
+    visibility: hidden;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+  }
+
+  .check_tools_label {
+    cursor: pointer;
+  }
+
+  .check_tools_button:checked ~ .check_tools {
+    visibility: visible;
+  }
+
+  /*.right_menu_slider {
+      position: absolute;
+      height: 32px;
+      top: 6px;
+      background-color: #5181b8;
+      border: 0;
+      transform: translateY(0px);
+      width: 2px;
+  }*/
+
+html {
+    --background_color_1: white;
+    --backgroung_color_2: #ededed;
+    --backgroung_color_3: #ededed;
+}
